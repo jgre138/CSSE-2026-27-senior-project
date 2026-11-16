@@ -4,6 +4,8 @@
 // No battery yet? Connect the board's 5V pin to the top of the divider to test the setup (expect ~5V).
 // Note: the percent only makes sense for a single LiPo cell (3.3V-4.2V).
 
+// Note: For the current version of the project for the demo, we will not be using a battery, so this test is not required. However, it is included here for completeness and future use.
+
 constexpr uint8_t BATT_PIN = 34;
 constexpr float DIVIDER_RATIO = 2.0;  // 2 x 100k resistors
 

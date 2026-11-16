@@ -33,3 +33,5 @@ void loop() {
   }
   delay(200);
 }
+
+// Note: The HC-SR04 sensor can be a bit finicky, so if you don't get readings, try adjusting the delay times or the pulse duration.
