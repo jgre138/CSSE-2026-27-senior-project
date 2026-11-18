@@ -6,13 +6,13 @@
 //   HC-SR04: VCC -> 5V, GND -> GND, TRIG -> GPIO 26,
 //            ECHO -> GPIO 27 through a voltage divider (1k from ECHO to the pin, 2k from the pin to GND)
 //   Vibration motor: GPIO 17 -> ~1k resistor -> transistor base (motor on the collector, flyback diode)
-//   Buzzer (active): GPIO 23 -> buzzer +, buzzer - -> GND
+//   Buzzer (active): GPIO 13 -> buzzer +, buzzer - -> GND
 //   We have a passive buzzer, which is SUPER quiet, so we will need to use a different buzzer or get an active buzzer to get a louder sound?
 
 constexpr uint8_t TRIG_PIN = 26;
 constexpr uint8_t ECHO_PIN = 27;
 constexpr uint8_t MOTOR_PIN  = 17;
-constexpr uint8_t BUZZER_PIN = 23;
+constexpr uint8_t BUZZER_PIN = 13;
 
 constexpr float ALERT_RANGE_CM = 150;  // start alerting inside this distance
 constexpr float NEAR_CM        = 30;   // at or inside this distance = fastest pulses
